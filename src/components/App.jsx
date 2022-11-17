@@ -62,7 +62,25 @@ export default class App extends Component {
     }));
   };
 
+  componentDidMount() {
+    console.log('это ДИД МАУНТ');
+
+   const contactsLocalStorage = localStorage.getItem('contacts')
+   const parsedContacts = JSON.parse(contactsLocalStorage)
+   this.setState({contacs: parsedContacts})
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log('это ДИД АПДЕЙТ');
+    if (this.state.contacts !== prevState.contacts) {
+      console.log('Изменено!!');
+
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+    }
+  }
+
   render() {
+    console.log('Рендер в АПП');
     return (
       <div
         style={{
