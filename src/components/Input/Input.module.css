@@ -1,0 +1,47 @@
+.mainText {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: 150px;
+}
+
+.text {
+    font-size: 35px;
+    font-weight: 400;
+
+}
+
+
+
+
+.formWrapper {
+    margin-top: 25px;
+margin-bottom: 25px;
+
+}
+
+
+.input{
+    padding: 5px 30px 5px 30px;
+    margin-right: 25px;
+}
+
+.button {
+    padding: 10px 25px 10px 25px;
+    cursor: pointer;
+    background-color: rgb(255, 231, 196);
+    border: 1px black solid;
+    color: black;
+    border-radius: 4px;
+
+}
+
+.button:hover,
+.button:focus {
+background-color: blanchedalmond;
+}
+
+
+
+
+
+

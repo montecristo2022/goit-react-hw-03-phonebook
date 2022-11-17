@@ -1,0 +1,11 @@
+.contactWrapper {
+    display: flex;
+}
+
+.contactText {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.contactText:first-child{
+    margin-right: 20px;
+}
