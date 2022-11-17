@@ -65,9 +65,15 @@ export default class App extends Component {
   componentDidMount() {
     console.log('это ДИД МАУНТ');
 
-   const contactsLocalStorage = localStorage.getItem('contacts')
-   const parsedContacts = JSON.parse(contactsLocalStorage)
-   this.setState({contacs: parsedContacts})
+    const contactsLocalStorage = localStorage.getItem('contacts');
+    const parsedContacts = JSON.parse(contactsLocalStorage);
+
+if(parsedContacts !== true) {
+  this.setState({ contacts: parsedContacts });
+}
+
+
+    
   }
 
   componentDidUpdate(prevProps, prevState) {
